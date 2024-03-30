@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="686.0" style="-fx-background-color: aqua;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.UserSceneController">
+   <children>
+      <Label layoutX="172.0" layoutY="144.0" text="User : " />
+      <Label layoutX="172.0" layoutY="183.0" text="ID : " />
+      <Label layoutX="172.0" layoutY="226.0" text="Password : " />
+      <TextField fx:id="getID" layoutX="300.0" layoutY="178.0" />
+      <TextField fx:id="getPassword" layoutX="300.0" layoutY="221.0" />
+      <ComboBox layoutX="300.0" layoutY="129.0" prefHeight="31.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>
