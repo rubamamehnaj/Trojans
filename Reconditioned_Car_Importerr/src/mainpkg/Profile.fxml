@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="692.0" prefWidth="1135.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Mainpkg.ProfileController">
+   <children>
+      <Label layoutX="369.0" layoutY="79.0" text="Trojan's Bay">
+         <font>
+            <Font size="65.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="231.0" text="Profile :">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="308.0" text="Name :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="372.0" text="Shipping Address :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="430.0" text="Purchase History :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="489.0" text="Transactions :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTF" layoutX="182.0" layoutY="307.0" />
+      <TextField fx:id="shippingAddressTF" layoutX="276.0" layoutY="371.0" />
+      <TextField fx:id="purchaseHistoryTF" layoutX="276.0" layoutY="429.0" />
+      <ComboBox layoutX="251.0" layoutY="488.0" onAction="#transactionsONAction" prefHeight="31.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>

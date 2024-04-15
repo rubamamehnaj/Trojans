@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="717.0" prefWidth="951.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Mainpkg.InsuranceRecordController">
+   <children>
+      <Label layoutX="299.0" layoutY="73.0" text="Trojan's Bay">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <TableView fx:id="InsuranceRecordTV" layoutX="85.0" layoutY="234.0" prefHeight="383.0" prefWidth="781.0">
+        <columns>
+          <TableColumn fx:id="insuranceNameTC" prefWidth="173.0" text="Insured Name" />
+          <TableColumn fx:id="policyNumberTC" minWidth="0.0" prefWidth="156.0" text="Policy Number" />
+            <TableColumn fx:id="insuranceTypeTC" prefWidth="221.0" text="Insurance Type" />
+            <TableColumn fx:id="dateOfIssueTC" prefWidth="230.0" text="Date Of Issue" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+        </columns>
+      </TableView>
+      <Button layoutX="85.0" layoutY="643.0" mnemonicParsing="false" onAction="#addInsuranceRecordOnAction" text="Add Insurance Record">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="637.0" layoutY="643.0" mnemonicParsing="false" onAction="#removeInsuranceRecord" text="Remove Insurance Record">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="85.0" layoutY="177.0" text="Insurance Record:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

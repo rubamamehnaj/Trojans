@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="665.0" prefWidth="974.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Mainpkg.TransactionReportController">
+   <children>
+      <Label layoutX="291.0" layoutY="45.0" prefHeight="112.0" prefWidth="414.0" text="Trojan's Bay">
+         <font>
+            <Font size="67.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="180.0" prefHeight="60.0" prefWidth="186.0" text="Transaction Table:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="transactionTableTV" layoutX="50.0" layoutY="255.0" prefHeight="318.0" prefWidth="883.0">
+        <columns>
+          <TableColumn fx:id="dateOfTransactionTC" prefWidth="207.0" text="Date Of Transaction" />
+          <TableColumn fx:id="incomeTC" prefWidth="199.0" text="Income" />
+            <TableColumn fx:id="expenseTC" prefWidth="225.0" text="Expense" />
+            <TableColumn fx:id="totalAmountTC" prefWidth="251.0" text="Total Amount" />
+        </columns>
+      </TableView>
+      <Button layoutX="753.0" layoutY="602.0" mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="31.0" prefWidth="186.0" text="Add" />
+   </children>
+</AnchorPane>
